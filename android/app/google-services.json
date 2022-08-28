@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "447585770292",
+    "project_id": "quolo-ion",
+    "storage_bucket": "quolo-ion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447585770292:android:833762e44a463ff2796361",
+        "android_client_info": {
+          "package_name": "com.example.quolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447585770292-i47hk1vch69a99mjjiviuhqbe8d4b7l8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quolo",
+            "certificate_hash": "ba8408dd250b9a3614974028788f68864a6f63f9"
+          }
+        },
+        {
+          "client_id": "447585770292-nf66vvuqqsav46srfshp30meuvk26vvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdj_P1zqRv4BWArxJhEvL2Xm9Wx7TkF7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447585770292-nf66vvuqqsav46srfshp30meuvk26vvb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "447585770292-9cs9h4ef1i5v6s5vqgov6m0r9tu3jmf0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.quolo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
