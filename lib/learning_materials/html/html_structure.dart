@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quolo/utils/themes.dart';
 
-class HtmlIntroductionPage extends StatelessWidget {
-  const HtmlIntroductionPage({Key? key}) : super(key: key);
+class HtmlStructurePage extends StatelessWidget {
+const HtmlStructurePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +22,10 @@ class HtmlIntroductionPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
                   child: const Text(
-                    'HTML Overview',
+                    'HTML Structure',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   ),
                 ),
-                Container(
-                padding: const EdgeInsets.fromLTRB(0, 36, 0, 0),
-                child: Image.network(
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png', height: 140, width: double.infinity,)),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: RichText(
@@ -42,16 +38,17 @@ class HtmlIntroductionPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'HTML is a markup language released in 1993. It is used to structure an page of a website.'),
+                                    'HTML have a very basic structure. It consists of body-like structure by elemts such as <head>, <body> and <footer>.'),
                           ]),
                     )),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'HTML Syntax is pretty simple to make it understandable by beginners.',
+                        'In this course you will learn funddamentals of HTML, CSS, and JavaScript.',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
+                Image.network('https://github.com/HarshDev2/quol/blob/master/lib/assets/html_structure_codeview.png'),
                 
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quolo/learning_materials/content/course_overview.dart';
 import 'package:quolo/learning_materials/content/course_prerequisite.dart';
 import 'package:quolo/learning_materials/html/html_introduction.dart';
+import 'package:quolo/learning_materials/html/html_structure.dart';
 import 'package:quolo/model/learn.dart';
 import 'package:quolo/pages/result_page.dart';
 
@@ -35,7 +36,8 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const CourseOverviewPage()));
+                              builder: (context) =>
+                                  const CourseOverviewPage()));
                     }),
                 ListTile(
                     title: const Text('Prerequisites of this course'),
@@ -43,7 +45,8 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const CoursePrerequisitesPage()));
+                              builder: (context) =>
+                                  const CoursePrerequisitesPage()));
                     }),
               ]),
               ExpansionTile(
@@ -55,12 +58,18 @@ class HomePage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HtmlIntroductionPage()));
+                                builder: (context) =>
+                                    const HtmlIntroductionPage()));
                       }),
                   ListTile(
-                    title: const Text('Structure of HTML'),
-                    onTap: () {},
-                  ),
+                      title: const Text('Structure of HTML'),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const HtmlStructurePage()));
+                      }),
                   ListTile(
                     title: const Text('HTML Elements'),
                     onTap: () {},
