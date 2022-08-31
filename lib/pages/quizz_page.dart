@@ -28,105 +28,105 @@ class _QuizzScreenState extends State<QuizzScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: AppThemes.lightTheme(context),
-        home: Scaffold(
-          appBar: AppBar(
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-            title: const Text('HTML QUIZ'),
+      theme: AppThemes.lightTheme(context),
+      home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
-          body: Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: PageView.builder(
-                controller: _controller!,
-                onPageChanged: (page) {
-                  if (page == questions.length - 1) {
-                    setState(() {
-                      btnText = "See Results";
-                    });
-                  }
+          title: const Text('HTML QUIZ'),
+        ),
+        body: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: PageView.builder(
+              controller: _controller!,
+              onPageChanged: (page) {
+                if (page == questions.length - 1) {
                   setState(() {
-                    answered = false;
+                    btnText = "See Results";
                   });
-                },
-                physics: const NeverScrollableScrollPhysics(),
-                itemBuilder: (context, index) {
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      SizedBox(
+                }
+                setState(() {
+                  answered = false;
+                });
+              },
+              physics: const NeverScrollableScrollPhysics(),
+              itemBuilder: (context, index) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: double.infinity,
+                      child: Text(
+                        "Question ${index + 1}/10",
+                        textAlign: TextAlign.start,
+                        style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 24.0,
+                        ),
+                      ),
+                    ),
+                    const Divider(
+                      color: Colors.black,
+                    ),
+                    const SizedBox(
+                      height: 10.0,
+                    ),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 80.0,
+                      child: Text(
+                        "${questions[index].question}",
+                        style: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 18.0,
+                        ),
+                      ),
+                    ),
+                    for (int i = 0; i < questions[index].answers!.length; i++)
+                      Container(
                         width: double.infinity,
-                        child: Text(
-                          "Question ${index + 1}/10",
-                          textAlign: TextAlign.start,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontSize: 28.0,
+                        height: 50.0,
+                        margin: const EdgeInsets.only(
+                            bottom: 20.0, left: 12.0, right: 12.0),
+                        child: RawMaterialButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0),
                           ),
+                          fillColor: btnPressed
+                              ? questions[index].answers!.values.toList()[i]
+                                  ? Colors.green
+                                  : Colors.red
+                              : Colors.grey.shade300,
+                          onPressed: !answered
+                              ? () {
+                                  if (questions[index]
+                                      .answers!
+                                      .values
+                                      .toList()[i]) {
+                                    score++;
+                                  } else {}
+                                  setState(() {
+                                    btnPressed = true;
+                                    answered = true;
+                                  });
+                                }
+                              : null,
+                          child:
+                              Text(questions[index].answers!.keys.toList()[i],
+                                  style: const TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18.0,
+                                  )),
                         ),
                       ),
-                      const Divider(
-                        color: Colors.black,
-                      ),
-                      const SizedBox(
-                        height: 10.0,
-                      ),
-                      SizedBox(
-                        width: double.infinity,
-                        height: 120.0,
-                        child: Text(
-                          "${questions[index].question}",
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontSize: 22.0,
-                          ),
-                        ),
-                      ),
-                      for (int i = 0; i < questions[index].answers!.length; i++)
-                        Container(
-                          width: double.infinity,
-                          height: 50.0,
-                          margin: const EdgeInsets.only(
-                              bottom: 20.0, left: 12.0, right: 12.0),
-                          child: RawMaterialButton(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                            fillColor: btnPressed
-                                ? questions[index].answers!.values.toList()[i]
-                                    ? Colors.green
-                                    : Colors.red
-                                : Colors.grey.shade300,
-                            onPressed: !answered
-                                ? () {
-                                    if (questions[index]
-                                        .answers!
-                                        .values
-                                        .toList()[i]) {
-                                      score++;
-                                    } else {}
-                                    setState(() {
-                                      btnPressed = true;
-                                      answered = true;
-                                    });
-                                  }
-                                : null,
-                            child:
-                                Text(questions[index].answers!.keys.toList()[i],
-                                    style: const TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18.0,
-                                    )),
-                          ),
-                        ),
-                      const SizedBox(
-                        height: 20.0,
-                      ),
-                        InkWell(
+                    const SizedBox(
+                      height: 12.0,
+                    ),
+                    InkWell(
                         highlightColor: Colors.transparent,
                         onTap: () {
                           if (_controller!.page?.toInt() ==
@@ -145,25 +145,24 @@ class _QuizzScreenState extends State<QuizzScreen> {
                             });
                           }
                         },
-                        
-                       child: Ink(
-                        padding: const EdgeInsets.all(14.0),
-                        
-                        
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.blue.shade400),
-                        width: 180,
-                        child: Text(
-                          btnText,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(color: Colors.white),
-                        ),
-                       )
-                      )
-                    ],
-                  );
-                },
-                itemCount: questions.length,
-              )),
-        ));
+                        child: Ink(
+                          padding: const EdgeInsets.all(14.0),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.blue.shade400),
+                          width: 180,
+                          child: Text(
+                            btnText,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(color: Colors.white),
+                          ),
+                        ))
+                  ],
+                );
+              },
+              itemCount: questions.length,
+            )),
+      ),
+    );
   }
 }

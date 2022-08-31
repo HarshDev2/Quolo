@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:quolo/learning_materials/content/course_overview.dart';
+import 'package:quolo/learning_materials/content/course_prerequisite.dart';
+import 'package:quolo/learning_materials/html/html_introduction.dart';
+import 'package:quolo/model/learn.dart';
+import 'package:quolo/pages/result_page.dart';
 
 import '../utils/themes.dart';
 
@@ -23,13 +28,35 @@ class HomePage extends StatelessWidget {
                     'Web Development',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
                   )),
+              ExpansionTile(title: const Text('Course Overview'), children: [
+                ListTile(
+                    title: const Text('Overview'),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CourseOverviewPage()));
+                    }),
+                ListTile(
+                    title: const Text('Prerequisites of this course'),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CoursePrerequisitesPage()));
+                    }),
+              ]),
               ExpansionTile(
                 title: const Text('Introduction to HTML'),
                 children: [
                   ListTile(
-                    title: const Text('What is HTML?'),
-                    onTap: () {},
-                  ),
+                      title: const Text('What is HTML?'),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HtmlIntroductionPage()));
+                      }),
                   ListTile(
                     title: const Text('Structure of HTML'),
                     onTap: () {},
