@@ -3,7 +3,6 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:quolo/pages/challenges.dart';
 import 'package:quolo/pages/profile.dart';
 import 'pages/home.dart';
-import 'package:quolo/pages/chat.dart';
 
 class NavManagement extends StatefulWidget {
   const NavManagement({Key? key}) : super(key: key);
@@ -19,10 +18,8 @@ class _ExampleState extends State<NavManagement> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    
+
     ChallengesPages(),
-    
-    ChatPage(),
     
     ProfilePage(),
   ];
@@ -56,7 +53,7 @@ class _ExampleState extends State<NavManagement> {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: const Duration(milliseconds: 600),
               tabBackgroundColor: Colors.grey[100]!,
-              color: Colors.black,
+              color: Color.fromARGB(255, 113, 105, 105),
               tabs: const [
                 GButton(
                   icon: Icons.home,
@@ -64,13 +61,8 @@ class _ExampleState extends State<NavManagement> {
                   iconSize: 22,
                 ),
                 GButton(
-                  icon: Icons.leaderboard,
+                  icon: Icons.leaderboard_rounded,
                   text: 'Practice',
-                  iconSize: 22,
-                ),
-                GButton(
-                  icon: Icons.chat_rounded,
-                  text: 'Chat',
                   iconSize: 22,
                 ),
                 GButton(
