@@ -22,7 +22,7 @@ class HtmlAttributesPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
                   child: const Text(
-                    'HTML Elements',
+                    'HTML Attributes',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -38,23 +38,41 @@ class HtmlAttributesPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'In HTML, to show something visually on a web page html elements are used.'),
+                                    'As, there are alot of elements in html, there are also attributes for defining properties of an element.'),
                           ]),
                     )),
-                Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_structure_codeview.png'),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'Some examples are <p>Paragraph</p>, <a>Link</a>\' In HTML, Elements have opening tag <example> and closing tag </example>. everything displayed on the web page is defined by these elements only.',
+                        'An attribute is defined in the following way-',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
-                
-                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text('<p color = \'red\'>Quolo</p>',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ))),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                  child: Image.network(
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_structure_codeview.png'),
+                ),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                  child: const Text(
+                    'Explanation - an attribute is putted in a opening tag( for eg. - <p>). \n \n Syntax of is pretty simple. \n It\'s just\n \n<element property = \'value\'>Example</p>',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
-                  child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)
+                  child: const Text(
+                    'An attribute can be used to define a property of a element. you will learn uses of html attributes in the next sections.',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                )
               ],
             ),
           ),

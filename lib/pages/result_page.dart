@@ -13,10 +13,12 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(leading: IconButton(icon: const Icon(Icons.arrow_back_ios_rounded),onPressed: () => Navigator.pushNamed(context, '/')),
+      title: const Text('Result'),),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const SizedBox(height: 60,),
           const SizedBox(
             width: double.infinity,
             child: Text(
@@ -48,9 +50,9 @@ class _ResultScreenState extends State<ResultScreen> {
             ),
           ),
           const SizedBox(
-            height: 100.0,
+            height: 60.0,
           ),
-          FlatButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.push(
                   context,
@@ -58,9 +60,6 @@ class _ResultScreenState extends State<ResultScreen> {
                     builder: (context) => const QuizzScreen(),
                   ));
             },
-            shape: const StadiumBorder(),
-            color: Colors.blue,
-            padding: const EdgeInsets.all(18.0),
             child: const Text(
               "Reapeat the quizz",
               style: TextStyle(color: Colors.white),

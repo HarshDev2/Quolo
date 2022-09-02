@@ -42,7 +42,7 @@ class HtmlIntroductionPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'HTML is a markup language released in 1993. It is used to structure an page of a website.'),
+                                    'HTML is a markup language invented by Tim Berners-Lee and released in 1993. It is used to structure an page of a website.'),
                           ]),
                     )),
                 Container(

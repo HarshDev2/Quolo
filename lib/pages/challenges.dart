@@ -34,7 +34,7 @@ class ChallengesPages extends StatelessWidget {
                   Container(
                       margin: const EdgeInsets.fromLTRB(0, 12, 0, 0),
                       child: const Text(
-                        '20 Questions',
+                        '10 Questions',
                         style: TextStyle(fontSize: 18),
                       )),
                   Row(
