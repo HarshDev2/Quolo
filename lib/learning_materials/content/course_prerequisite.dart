@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quolo/utils/themes.dart';
 import 'package:stream_chat_flutter/stream_chat_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CoursePrerequisitesPage extends StatelessWidget {
   const CoursePrerequisitesPage({Key? key}) : super(key: key);
@@ -88,7 +87,7 @@ class CoursePrerequisitesPage extends StatelessWidget {
                       ),
                     ])),
                 Container(
-                padding: EdgeInsets.fromLTRB(8, 26, 8, 26),
+                padding: const EdgeInsets.fromLTRB(8, 26, 8, 26),
                 child: Image.network('https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kZSUyMGVkaXRvcnxlbnwwfHwwfHw%3D&w=1000&q=80')),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),

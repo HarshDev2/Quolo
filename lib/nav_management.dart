@@ -53,7 +53,7 @@ class _ExampleState extends State<NavManagement> {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: const Duration(milliseconds: 600),
               tabBackgroundColor: Colors.grey[100]!,
-              color: Color.fromARGB(255, 113, 105, 105),
+              color: const Color.fromARGB(255, 113, 105, 105),
               tabs: const [
                 GButton(
                   icon: Icons.home,

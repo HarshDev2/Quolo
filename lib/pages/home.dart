@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/learning_materials/content/course_overview.dart';
 import 'package:quolo/learning_materials/content/course_prerequisite.dart';
+import 'package:quolo/learning_materials/html/html_attributes.dart';
+import 'package:quolo/learning_materials/html/html_comments.dart';
+import 'package:quolo/learning_materials/html/html_elements.dart';
+import 'package:quolo/learning_materials/html/html_first_exercise.dart';
 import 'package:quolo/learning_materials/html/html_introduction.dart';
+import 'package:quolo/learning_materials/html/html_paragraph.dart';
 import 'package:quolo/learning_materials/html/html_structure.dart';
-import 'package:quolo/model/learn.dart';
-import 'package:quolo/pages/result_page.dart';
 
 import '../utils/themes.dart';
 
@@ -72,15 +75,23 @@ class HomePage extends StatelessWidget {
                       }),
                   ListTile(
                     title: const Text('HTML Elements'),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const HtmlElementsPage()));
+                      }
                   ),
                   ListTile(
-                    title: const Text('Making first page in HTML'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Exercise'),
-                    onTap: () {},
+                    title: const Text('Paragraph in HTML'),
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const HtmlParagraphPage()));
+                      }
                   ),
                 ],
               ),
@@ -89,20 +100,24 @@ class HomePage extends StatelessWidget {
                 children: [
                   ListTile(
                     title: const Text('Comments'),
-                    onTap: () {},
+                    onTap: () {Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const HtmlCommentsPage()));},
                   ),
                   ListTile(
                     title: const Text('Attributes'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Paragraphs'),
-                    onTap: () {},
+                    onTap: () {Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const HtmlAttributesPage()));},
                   ),
                 ],
               ),
               ExpansionTile(
-                title: const Text('Elements in HTML'),
+                title: const Text('Elements of HTML'),
                 children: [
                   ListTile(
                     title: const Text('Text Formats'),
@@ -275,7 +290,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               ExpansionTile(
-                title: Text('More About This'),
+                title: const Text('More About This'),
                 children: [
                   ListTile(
                     title: const Text('What is CSS?'),
