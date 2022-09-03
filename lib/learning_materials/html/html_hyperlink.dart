@@ -61,12 +61,12 @@ class HtmlHyperLinkPage extends StatelessWidget {
               Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: Image.network(
-                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_attribute.png'),
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_hyperlink.png'),
                 ),
               Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                   child: Image.network(
-                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_attribute.png'),
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_hyperlink_preview.png'),
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),

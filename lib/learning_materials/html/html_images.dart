@@ -56,6 +56,16 @@ class HtmlImagesPage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ))),
                 Container(
+                  padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
+                  child: Image.network(
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_attribute.png'),
+                ),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
+                  child: Image.network(
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_attribute.png'),
+                ),
+                Container(
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                     child: const Text('Here we have used <img src = \'cat.png\'> \n \nExplanation - Img element is used for image and the attribute "src" is used for the path of the image.',
                         style: TextStyle(
