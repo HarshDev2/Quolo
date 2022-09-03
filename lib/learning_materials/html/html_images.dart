@@ -58,12 +58,12 @@ class HtmlImagesPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
                   child: Image.network(
-                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_attribute.png'),
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_img.png'),
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
                   child: Image.network(
-                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_attribute.png'),
+                      'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_img_preview.png'),
                 ),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
