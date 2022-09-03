@@ -4,10 +4,11 @@ import 'package:quolo/learning_materials/content/course_prerequisite.dart';
 import 'package:quolo/learning_materials/html/html_attributes.dart';
 import 'package:quolo/learning_materials/html/html_comments.dart';
 import 'package:quolo/learning_materials/html/html_elements.dart';
-import 'package:quolo/learning_materials/html/html_first_exercise.dart';
+import 'package:quolo/learning_materials/html/html_images.dart';
 import 'package:quolo/learning_materials/html/html_introduction.dart';
 import 'package:quolo/learning_materials/html/html_paragraph.dart';
 import 'package:quolo/learning_materials/html/html_structure.dart';
+import 'package:quolo/learning_materials/html/html_text_formats.dart';
 
 import '../utils/themes.dart';
 
@@ -74,25 +75,23 @@ class HomePage extends StatelessWidget {
                                     const HtmlStructurePage()));
                       }),
                   ListTile(
-                    title: const Text('HTML Elements'),
-                    onTap: () {
-                      Navigator.push(
+                      title: const Text('HTML Elements'),
+                      onTap: () {
+                        Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
                                     const HtmlElementsPage()));
-                      }
-                  ),
+                      }),
                   ListTile(
-                    title: const Text('Paragraph in HTML'),
-                    onTap: () {
-                      Navigator.push(
+                      title: const Text('Paragraph in HTML'),
+                      onTap: () {
+                        Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
                                     const HtmlParagraphPage()));
-                      }
-                  ),
+                      }),
                 ],
               ),
               ExpansionTile(
@@ -100,19 +99,22 @@ class HomePage extends StatelessWidget {
                 children: [
                   ListTile(
                     title: const Text('Comments'),
-                    onTap: () {Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const HtmlCommentsPage()));},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HtmlCommentsPage()));
+                    },
                   ),
                   ListTile(
                     title: const Text('Attributes'),
-                    onTap: () {Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const HtmlAttributesPage()));},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const HtmlAttributesPage()));
+                    },
                   ),
                 ],
               ),
@@ -121,12 +123,22 @@ class HomePage extends StatelessWidget {
                 children: [
                   ListTile(
                     title: const Text('Text Formats'),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const HtmlTextFormatsPage()));
+                    },
                   ),
                   ListTile(
-                    title: const Text('Images'),
-                    onTap: () {},
-                  ),
+                      title: const Text('Images'),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HtmlImagesPage()));
+                      }),
                   ListTile(
                     title: const Text('Hyper Links'),
                     onTap: () {},
@@ -157,49 +169,16 @@ class HomePage extends StatelessWidget {
                 title: const Text('Styling with CSS'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
-                    onTap: () {},
-                  ),
-                ],
-              ),
-              ExpansionTile(
-                title: const Text('Advanced HTML Elements'),
-                children: [
-                  ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
-                    onTap: () {},
-                  ),
+                  )
                 ],
               ),
               ExpansionTile(
                 title: const Text('Styling with CSS'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
                   ),
                 ],
@@ -208,15 +187,7 @@ class HomePage extends StatelessWidget {
                 title: const Text('Intoduction to JavaScript'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
                   ),
                 ],
@@ -225,32 +196,16 @@ class HomePage extends StatelessWidget {
                 title: const Text('Basics of JavaScript'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
-                    onTap: () {},
-                  ),
+                  )
                 ],
               ),
               ExpansionTile(
                 title: const Text('Advanced JavaScript'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
                   ),
                 ],
@@ -259,15 +214,7 @@ class HomePage extends StatelessWidget {
                 title: const Text('Loops in JavaScript'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
+                    title: const Text('oming Soon'),
                     onTap: () {},
                   ),
                 ],
@@ -276,15 +223,7 @@ class HomePage extends StatelessWidget {
                 title: const Text('DOM Manupulation'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
                   ),
                 ],
@@ -293,15 +232,7 @@ class HomePage extends StatelessWidget {
                 title: const Text('More About This'),
                 children: [
                   ListTile(
-                    title: const Text('What is CSS?'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Basics of CSS'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Ways to use CSS'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
                   ),
                 ],
