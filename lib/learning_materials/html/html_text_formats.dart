@@ -69,17 +69,16 @@ class HtmlTextFormatsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_bold.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
                     'Browser View -',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_bold.png')),
-                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                   child: const Text(
@@ -109,17 +108,16 @@ class HtmlTextFormatsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_italic.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
                     'Browser View -',
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_italic.png')),
-                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -141,17 +139,17 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
-                 Container(
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_marked.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
-                   'Browser View -', style: TextStyle(fontSize: 16),
+                    'Browser View -',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_marked.png')),
-                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -173,17 +171,17 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
-                 Container(
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_small.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
-                   'Browser View -', style: TextStyle(fontSize: 16),
+                    'Browser View -',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_small.png')),
-                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -205,17 +203,17 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
-                 Container(
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_deleted.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
-                   'Browser View -', style: TextStyle(fontSize: 16),
+                    'Browser View -',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_deleted.png')),
-                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -237,17 +235,17 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
-                 Container(
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_underlined.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
-                   'Browser View -', style: TextStyle(fontSize: 16),
+                    'Browser View -',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_underlined.png')),
-                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -255,10 +253,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
-                 Container(
+                Container(
                   padding: const EdgeInsets.fromLTRB(12, 6, 12, 0),
                   child: const Text(
-                    '<sub> element makes the text little-bit down than the text near it and <sup> element makes the text upper than the text near it.',  style: TextStyle(fontSize: 16),
+                    '<sub> element makes the text little-bit down than the text near it and <sup> element makes the text upper than the text near it.',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
                 Container(
@@ -268,17 +267,17 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
-                 Container(
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_sub_superscript.png')),
+                Container(
                   padding: const EdgeInsets.fromLTRB(18, 6, 12, 0),
                   child: const Text(
-                   'Browser View -', style: TextStyle(fontSize: 16),
+                    'Browser View -',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
-                child: Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_sub_superscript.png')),
-                
               ],
             ),
           ),
