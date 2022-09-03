@@ -41,8 +41,24 @@ class HtmlParagraphPage extends StatelessWidget {
                                     'Paragraph are a way to display text in HTML, they are mostly used for defining paragraphs in articles, blogs, or anything but we will see how to display text on a web page with them.'),
                           ]),
                     )),
-                Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_structure_codeview.png'),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
+                child: Image.network(
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_paragraph_code.png')),
+                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 36, 12, 24),
+                    child: const Text(
+                        'Browser View -',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                        ))),
+                Container(
+                  padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
+                child: Image.network(
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_paragraph_code_preview.png',)),
+                
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
