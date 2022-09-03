@@ -4,6 +4,7 @@ import 'package:quolo/learning_materials/content/course_prerequisite.dart';
 import 'package:quolo/learning_materials/html/html_attributes.dart';
 import 'package:quolo/learning_materials/html/html_comments.dart';
 import 'package:quolo/learning_materials/html/html_elements.dart';
+import 'package:quolo/learning_materials/html/html_hyperlink.dart';
 import 'package:quolo/learning_materials/html/html_images.dart';
 import 'package:quolo/learning_materials/html/html_introduction.dart';
 import 'package:quolo/learning_materials/html/html_paragraph.dart';
@@ -141,7 +142,12 @@ class HomePage extends StatelessWidget {
                       }),
                   ListTile(
                     title: const Text('Hyper Links'),
-                    onTap: () {},
+                    onTap: () {
+                       Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HtmlHyperLinkPage()));
+                    },
                   ),
                   ListTile(
                     title: const Text('Lists'),

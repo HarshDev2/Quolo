@@ -80,6 +80,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_bold_preview.png')),
+           
+                Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                   child: const Text(
                     '<strong> element behaves as bold text you just need to use <strong>Text Here</strong>',
@@ -119,6 +124,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_italic_preview.png')),
+           
+                Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
                     'Marked Text -',
@@ -150,6 +160,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_marked_preview.png')),
+           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -183,6 +198,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_small_preview.png')),
+           
+                Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
                     'Deleted Text -',
@@ -214,6 +234,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_deleted_preview.png')),
+           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -247,6 +272,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                   ),
                 ),
                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_underlined_preview.png')),
+           
+                Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
                     'Subscript and Superscript Text-',
@@ -278,6 +308,11 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
+                Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_sub_superscript_preview.png')),
+           
               ],
             ),
           ),
