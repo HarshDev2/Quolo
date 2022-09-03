@@ -44,7 +44,7 @@ class HtmlCommentsPage extends StatelessWidget {
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'In HTML, comments are written using // for single line comment or /* Example */ for multi line comments, most of the time comments are used for writing explanations for codes as other developers are going to read them.',
+                        'In HTML, comments are written using // for single line com, most of the time comments are used for writing explanations for codes as other developers are going to read them.',
                         style: TextStyle(
                           fontSize: 16,
                         ))),

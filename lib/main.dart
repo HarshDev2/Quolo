@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const NavManagement(),
         'settings': (context) => const SettingsPage(),
         '/html_beginner_test': (context) => const QuizzScreen(),
-      },
+      }, 
     );
   }
 }
