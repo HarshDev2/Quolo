@@ -4,6 +4,8 @@ import 'package:quolo/pages/settings.dart';
 import 'package:quolo/pages/quizz_page.dart';
 
 void main() {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  
   runApp(const MyApp());
 }
 

@@ -149,26 +149,6 @@ class HomePage extends StatelessWidget {
                                 builder: (context) => const HtmlHyperLinkPage()));
                     },
                   ),
-                  ListTile(
-                    title: const Text('Lists'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Unordered List'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Tables'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('User Inputs'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Exercise'),
-                    onTap: () {},
-                  ),
                 ],
               ),
               ExpansionTile(
