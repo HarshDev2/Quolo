@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quolo/utils/themes.dart';
 
-class CssIntroductionPage extends StatelessWidget {
-  const CssIntroductionPage({Key? key}) : super(key: key);
+class CssSyntaxPage extends StatelessWidget {
+  const CssSyntaxPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,34 +22,39 @@ class CssIntroductionPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
                   child: const Text(
-                    'CSS Introduction',
+                    'CSS Syntax',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   ),
                 ),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
-                  child: Image.network('https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_logo.png', height: 140, width: double.infinity,),),
+                    child: RichText(
+                      text: TextSpan(
+                          style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.black,
+                              fontWeight: FontWeight.normal,
+                              fontFamily: GoogleFonts.poppins().fontFamily),
+                          children: const <TextSpan>[
+                            TextSpan(
+                                text:
+                                    'In HTML, to show something visually on a web page html elements are used.'),
+                          ]),
+                    )),
+                Image.network(
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_syntax.png'),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'Cascading Style Sheets (CSS) is a style sheet lanaguage used to design a web page with html it was released in 1996 after 3 years of html release (imagine websites lived without colors for 3 years). it was developed by Håkon Wium Lie. ',
+                        'Some examples are <p>Paragraph</p>, <a>Link</a>\' In HTML, Elements have opening tag <example> and closing tag </example>. everything displayed on the web page is defined by these elements only.',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
-                Container(
-                  padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
-                  child: const Text(
-                    'CSS is used to style the web pages that are created by HTML. CSS have a variety of properties available to design a web page.',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ),
+                
+                
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
-                  child: const Text(
-                    'Continue to the next section',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                )
+                  child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)
               ],
             ),
           ),

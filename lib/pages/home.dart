@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quolo/learning_materials/content/course_overview.dart';
 import 'package:quolo/learning_materials/content/course_prerequisite.dart';
 import 'package:quolo/learning_materials/css/css_introduction.dart';
+import 'package:quolo/learning_materials/css/css_syntax.dart';
 import 'package:quolo/learning_materials/html/html_attributes.dart';
 import 'package:quolo/learning_materials/html/html_comments.dart';
 import 'package:quolo/learning_materials/html/html_elements.dart';
@@ -163,11 +164,38 @@ class HomePage extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => const CssIntroductionPage()));
                     },
+                  ),
+                   ListTile(
+                    title: const Text('CSS Syntax'),
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssSyntaxPage()));
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('CSS Selectors'),
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssIntroductionPage()));
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('How to use CSS?'),
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssIntroductionPage()));
+                    },
                   )
                 ],
               ),
               ExpansionTile(
-                title: const Text('Styling with CSS'),
+                title: const Text('Basics Of CSS'),
                 children: [
                   ListTile(
                     title: const Text('Coming Soon'),
