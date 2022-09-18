@@ -11,8 +11,10 @@ import 'package:quolo/learning_materials/html/html_elements.dart';
 import 'package:quolo/learning_materials/html/html_hyperlink.dart';
 import 'package:quolo/learning_materials/html/html_images.dart';
 import 'package:quolo/learning_materials/html/html_introduction.dart';
+import 'package:quolo/learning_materials/html/html_lists.dart';
 import 'package:quolo/learning_materials/html/html_paragraph.dart';
 import 'package:quolo/learning_materials/html/html_structure.dart';
+import 'package:quolo/learning_materials/html/html_tables.dart';
 import 'package:quolo/learning_materials/html/html_text_formats.dart';
 
 import '../utils/themes.dart';
@@ -153,6 +155,24 @@ class HomePage extends StatelessWidget {
                                 builder: (context) => const HtmlHyperLinkPage()));
                     },
                   ),
+                   ListTile(
+                    title: const Text('Lists'),
+                    onTap: () {
+                       Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HtmlListsPage()));
+                    },
+                  ),
+                   ListTile(
+                    title: const Text('Tables'),
+                    onTap: () {
+                       Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HtmlTablesPage()));
+                    },
+                  ),
                 ],
               ),
               ExpansionTile(
@@ -198,6 +218,43 @@ class HomePage extends StatelessWidget {
               ),
               ExpansionTile(
                 title: const Text('Basics Of CSS'),
+                children: [
+                  ListTile(
+                    title: const Text('Comments'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Text('Coloring'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Text('Box Model'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Text('Sizing'),
+                    onTap: () {},
+                  ),
+                 ListTile(
+                    title: const Text('Margin'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Text('Padding'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Text('Borders'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: const Text('Outlines'),
+                    onTap: () {},
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: const Text('HTML5 Elements'),
                 children: [
                   ListTile(
                     title: const Text('Coming Soon'),
