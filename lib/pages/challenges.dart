@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:quolo/pages/quizz_page.dart';
 import 'package:quolo/utils/themes.dart';
 
 class ChallengesPages extends StatelessWidget {
@@ -8,76 +8,52 @@ class ChallengesPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: AppThemes.lightTheme(context),
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Challenges'),
-          ),
-          body: SafeArea(
-            child: Column(children: [
-              Container(
-                alignment: Alignment.center,
-                height: 180,
-                margin: const EdgeInsets.fromLTRB(8, 180, 8, 0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.grey.shade200,
-                ),
-                child: Column(children: [
-                  Container(
-                    margin: const EdgeInsets.fromLTRB(0, 8, 0, 0),
-                    child: Text('HTML BEGINNER',
-                        style: TextStyle(
-                            fontSize: 30,
-                            fontFamily: GoogleFonts.poppins().fontFamily)),
-                  ),
-                  Container(
-                      margin: const EdgeInsets.fromLTRB(0, 12, 0, 0),
-                      child: const Text(
-                        '10 Questions',
-                        style: TextStyle(fontSize: 18),
-                      )),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 24, 140, 0),
-                        child: InkWell(
-                            highlightColor: Colors.transparent,
-                            splashColor: Colors.transparent,
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, '/html_beginner_test');
-                            },
-                            child: Container(
-                              padding: const EdgeInsets.fromLTRB(8, 10, 8, 10),
-                              width: 120,
-                              decoration: BoxDecoration(
-                                color: Colors.blue.shade200,
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: const Text(
-                                'Start',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                            )),
-                      ),
-                      Container(
-                          margin: const EdgeInsets.fromLTRB(0, 26, 20, 0),
-                          child: const Text(
-                            'Easy',
-                            style: TextStyle(fontSize: 16),
-                          ))
-                    ],
-                  ),
-                ]),
+      theme: AppThemes.lightTheme(context),
+      home: SafeArea(
+        child: Scaffold(
+          body: Column(
+            children: [
+              const SizedBox(
+                height: 240,
               ),
-            ]),
+              Container(
+                decoration: BoxDecoration(color: Colors.grey.shade200, borderRadius: BorderRadius.circular(12)),
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(6, 16, 6, 20),
+                child: Column(
+                  children: [
+                    const Text(
+                      'HTML Beginner',
+                      style:
+                          TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                    ),
+                    const SizedBox(height: 16),
+                    const Text(
+                      'Difficulty - Easy',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
+                    const SizedBox(height: 16),
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.blue.shade400,
+                          borderRadius: BorderRadius.circular(8)),
+                      width: 120,
+                      child: const Text('Start',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold)),
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

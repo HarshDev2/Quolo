@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:quolo/pages/settings.dart';
+import 'package:quolo/utils/themes.dart';
+import 'package:stream_chat_flutter/stream_chat_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -6,81 +10,108 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: Container(
-              margin: const EdgeInsets.fromLTRB(0, 200, 0, 0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                  Container(
-                      margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                      child: const Icon(Icons.star)),
-                  Container(
-                    margin: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                    child: const Text(
-                      'Rate',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(fontSize: 20),
-                    ),
+        theme: AppThemes.lightTheme(context),
+        home: Scaffold(
+            body: SafeArea(
+                child: Column(children: [
+          const SizedBox(
+            height: 120,
+          ),
+          InkWell(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SettingsPage(),
+                )),
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(18, 8, 12, 8),
+              decoration: BoxDecoration(
+                  color: Colors.grey.shade100,
+                  borderRadius: BorderRadius.circular(12)),
+              child: Row(
+                children: const [
+                  Text(
+                    'Rate Us',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                    ],
+                  SizedBox(
+                    width: 236,
                   ),
-                  InkWell(
-                    onTap: () => Navigator.pushNamed(context, 'settings'),
-                    child: Container(
-                        margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-                        child: Row(
-                          children: [
-                            Container(
-                                margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                                child: const Icon(Icons.settings)),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                              child: const Text(
-                                'Settings',
-                                textAlign: TextAlign.left,
-                                style: TextStyle(fontSize: 20),
-                              ),
-                            ),
-                          ],
-                        )),
-                  ),
-                  InkWell(
-                    onTap: () {
-                      const AlertDialog(
-                        title: Text('Write your feedback'),
-                        content: Text('hi'),
-                      );
-                      showDialog(
-                          context: context,
-                          builder: (_) => const AlertDialog());
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.fromLTRB(0, 20, 0, 0),
-                      child: Row(
-                        children: [
-                          Container(
-                              margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                              child: const Icon(Icons.feedback)),
-                          Container(
-                            margin: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                            child: const Text(
-                              'FeedBack',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(fontSize: 20),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 18,
                   )
                 ],
-              )),
-        ),
-      ),
-    );
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 26,
+          ),
+          InkWell(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SettingsPage(),
+                )),
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(18, 8, 12, 8),
+              decoration: BoxDecoration(
+                  color: Colors.grey.shade100,
+                  borderRadius: BorderRadius.circular(12)),
+              child: Row(
+                children: const [
+                  Text(
+                    'Settings',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(
+                    width: 231,
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 18,
+                  )
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 26,
+          ),
+          InkWell(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () => launchUrl(Uri(
+              scheme: 'mailto',
+              path: 'support@quolo.xyz',
+            )),
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(18, 8, 12, 8),
+              decoration: BoxDecoration(
+                  color: Colors.grey.shade100,
+                  borderRadius: BorderRadius.circular(12)),
+              child: Row(
+                children: const [
+                  Text(
+                    'Feedback',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(
+                    width: 216,
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 18,
+                  )
+                ],
+              ),
+            ),
+          ),
+        ]))));
   }
 }

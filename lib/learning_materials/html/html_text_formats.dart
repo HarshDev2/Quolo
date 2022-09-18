@@ -10,13 +10,13 @@ class HtmlTextFormatsPage extends StatelessWidget {
     return MaterialApp(
         theme: AppThemes.lightTheme(context),
         home: Scaffold(
-          appBar: AppBar(
-              leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios_new_rounded),
-            onPressed: () => Navigator.pop(context),
-          )),
-          body: SingleChildScrollView(
-            child: Column(
+            appBar: AppBar(
+                leading: IconButton(
+              icon: const Icon(Icons.arrow_back_ios_new_rounded),
+              onPressed: () => Navigator.pop(context),
+            )),
+            body: SingleChildScrollView(
+                child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
@@ -83,7 +83,6 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_bold_preview.png')),
-           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                   child: const Text(
@@ -127,7 +126,6 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_italic_preview.png')),
-           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -164,7 +162,6 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_marked_preview.png')),
-           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -201,7 +198,6 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_small_preview.png')),
-           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -238,7 +234,6 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_deleted_preview.png')),
-           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -275,7 +270,6 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_underlined_preview.png')),
-           
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 12, 12, 0),
                   child: const Text(
@@ -312,10 +306,7 @@ class HtmlTextFormatsPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Image.network(
                         'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_text_sub_superscript_preview.png')),
-           
               ],
-            ),
-          ),
-        ));
+            ))));
   }
 }

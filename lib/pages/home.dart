@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/learning_materials/content/course_overview.dart';
 import 'package:quolo/learning_materials/content/course_prerequisite.dart';
+import 'package:quolo/learning_materials/css/css_introduction.dart';
 import 'package:quolo/learning_materials/html/html_attributes.dart';
 import 'package:quolo/learning_materials/html/html_comments.dart';
 import 'package:quolo/learning_materials/html/html_elements.dart';
@@ -152,11 +153,16 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               ExpansionTile(
-                title: const Text('Styling with CSS'),
+                title: const Text('Introduction to CSS'),
                 children: [
                   ListTile(
-                    title: const Text('Coming Soon'),
-                    onTap: () {},
+                    title: const Text('What is CSS?'),
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssIntroductionPage()));
+                    },
                   )
                 ],
               ),
@@ -200,7 +206,7 @@ class HomePage extends StatelessWidget {
                 title: const Text('Loops in JavaScript'),
                 children: [
                   ListTile(
-                    title: const Text('oming Soon'),
+                    title: const Text('Coming Soon'),
                     onTap: () {},
                   ),
                 ],
