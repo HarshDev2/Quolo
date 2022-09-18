@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:quolo/learning_materials/content/course_overview.dart';
 import 'package:quolo/learning_materials/content/course_prerequisite.dart';
 import 'package:quolo/learning_materials/css/css_introduction.dart';
+import 'package:quolo/learning_materials/css/css_selectors.dart';
 import 'package:quolo/learning_materials/css/css_syntax.dart';
+import 'package:quolo/learning_materials/css/css_uses.dart';
 import 'package:quolo/learning_materials/html/html_attributes.dart';
 import 'package:quolo/learning_materials/html/html_comments.dart';
 import 'package:quolo/learning_materials/html/html_elements.dart';
@@ -180,7 +182,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const CssIntroductionPage()));
+                                builder: (context) => const CssSelectorsPage()));
                     },
                   ),
                   ListTile(
@@ -189,7 +191,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const CssIntroductionPage()));
+                                builder: (context) => const CssUsesPage()));
                     },
                   )
                 ],
