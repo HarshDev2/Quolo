@@ -38,7 +38,7 @@ class CssSelectorsPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'CSS Selectors are used to select the elemnt which you want to use.'),
+                                    'CSS Selectors are used to select the element which you want to style.'),
                           ]),
                     )),
                 Container(
