@@ -1,9 +1,17 @@
 h1 {
-    color: green;
+    color: red;
+    /* Normal Color */
 }
 
-/* Comment doesn't compile with code */
-
-i {
-    color: yellow;
+h2{
+    color: #ff0000;
+    /* Hex Color */
+}
+h2{
+    color: rgb(255, 0, 0);
+    /* Rgb Color */
+}
+h2{
+    color: hsl(0°, 100%, 50%);
+    /* Rgb Color */
 }

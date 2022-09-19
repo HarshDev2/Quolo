@@ -1,4 +1,4 @@
-import '/model/question_model.dart';
+import 'package:quolo/model/question_model.dart';
 
 List<QuestionModel> questions = [
   QuestionModel(

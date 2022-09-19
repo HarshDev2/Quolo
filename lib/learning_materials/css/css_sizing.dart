@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quolo/utils/themes.dart';
 
-class CssCommentsPage extends StatelessWidget {
-  const CssCommentsPage({Key? key}) : super(key: key);
+class CssSizingPage extends StatelessWidget {
+  const CssSizingPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class CssCommentsPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.fromLTRB(16, 16, 0, 0),
                   child: const Text(
-                    'CSS Comments',
+                    'CSS Sizing',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -38,30 +38,30 @@ class CssCommentsPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'CSS comments allows the developers to write comments which can be used to help other developers understand the same code.'),
+                                    'Sizing in CSS is pretty simple we can use height, width and many other advanced CSS properties to size an element.'),
                           ]),
                     )),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'To write comments in CSS, /* Comment */ is used.',
+                        'In CSS, we can use height property to determine height of an element and width property to determine width of an element.',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
-                
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
-                    child: const Text(
-                        'Example -',
+                    child: const Text('Example -',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ))),
-                Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_comments.png'),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
-                  child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)
+                  child: const Text(
+                    'Continue to the next section.',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                )
               ],
             ),
           ),

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/utils/themes.dart';
 import '../data/html_beginner_questions.dart';
-import 'result_page.dart';
+import 'html_result_page.dart';
 
-class QuizzScreen extends StatefulWidget {
-  const QuizzScreen({Key? key}) : super(key: key);
+class HtmlBeginnerTest extends StatefulWidget {
+  const HtmlBeginnerTest({Key? key}) : super(key: key);
 
   @override
-  _QuizzScreenState createState() => _QuizzScreenState();
+  _HtmlBeginnerTestState createState() => _HtmlBeginnerTestState();
 }
 
-class _QuizzScreenState extends State<QuizzScreen> {
+class _HtmlBeginnerTestState extends State<HtmlBeginnerTest> {
   int question_pos = 0;
   int score = 0;
   bool btnPressed = false;

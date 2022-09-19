@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/nav_management.dart';
-import 'package:quolo/pages/quizz_page.dart';
+import 'package:quolo/pages/css_beginner_test.dart';
 
 class ResultScreen extends StatefulWidget {
   int score;

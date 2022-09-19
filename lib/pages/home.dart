@@ -6,6 +6,7 @@ import 'package:quolo/learning_materials/css/css_coloring.dart';
 import 'package:quolo/learning_materials/css/css_comments.dart';
 import 'package:quolo/learning_materials/css/css_introduction.dart';
 import 'package:quolo/learning_materials/css/css_selectors.dart';
+import 'package:quolo/learning_materials/css/css_sizing.dart';
 import 'package:quolo/learning_materials/css/css_syntax.dart';
 import 'package:quolo/learning_materials/css/css_uses.dart';
 import 'package:quolo/learning_materials/html/html_attributes.dart';
@@ -245,23 +246,12 @@ class HomePage extends StatelessWidget {
                   ),
                   ListTile(
                     title: const Text('Sizing'),
-                    onTap: () {},
-                  ),
-                 ListTile(
-                    title: const Text('Margin'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Padding'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Borders'),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    title: const Text('Outlines'),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssSizingPage()));
+                    },
                   ),
                 ],
               ),

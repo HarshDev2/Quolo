@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/nav_management.dart';
 import 'package:quolo/pages/settings.dart';
-import 'package:quolo/pages/quizz_page.dart';
+import 'package:quolo/pages/html_beginner_test.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const NavManagement(),
         'settings': (context) => const SettingsPage(),
-        '/html_beginner_test': (context) => const QuizzScreen(),
       }, 
     );
   }
