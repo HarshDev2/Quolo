@@ -17,8 +17,11 @@ class ChallengesPages extends StatelessWidget {
                 height: 240,
               ),
               Container(
-                decoration: BoxDecoration(color: Colors.grey.shade200, borderRadius: BorderRadius.circular(12)),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 243, 243, 243),
+                    borderRadius: BorderRadius.circular(24)),
                 width: double.infinity,
+                margin: const EdgeInsets.fromLTRB(12, 0, 12, 0),
                 padding: const EdgeInsets.fromLTRB(6, 16, 6, 20),
                 child: Column(
                   children: [
@@ -34,14 +37,17 @@ class ChallengesPages extends StatelessWidget {
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                     ),
                     const SizedBox(height: 16),
-                    
                     InkWell(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const QuizzScreen(),)),
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const QuizzScreen(),
+                          )),
                       child: Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                            color: Colors.blue.shade400,
-                            borderRadius: BorderRadius.circular(8)),
+                            color: Color.fromARGB(255, 48, 225, 255),
+                            borderRadius: BorderRadius.circular(12)),
                         width: 120,
                         child: const Text('Start',
                             textAlign: TextAlign.center,

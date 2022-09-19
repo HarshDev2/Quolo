@@ -38,20 +38,44 @@ class HtmlTablesPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'In HTML, to show something visually on a web page html elements are used.'),
+                                    'Tables are used to display data in form of tables in html.'),
                           ]),
                     )),
-                Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_structure_codeview.png'),
+               
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'Some examples are <p>Paragraph</p>, <a>Link</a>\' In HTML, Elements have opening tag <example> and closing tag </example>. everything displayed on the web page is defined by these elements only.',
+                        'We have alot of elements to display a table like <table> <tr> <th> <td> and other.',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ))),
+               
+                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text(
+                        'Syntax -',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ))),
+                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text(
+                        'We use <table> to display a table and then use <tr> to create a row in the table, we can use <th> to make a row head which will be just a bold text , we use <td> to display data in the table.',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
                 
-                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text(
+                        'Horizontal table -',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ))),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
                   child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)

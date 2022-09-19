@@ -38,7 +38,7 @@ class HtmlListsPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'HTML Lists allow developers to groupa set of related items in lists.'),
+                                    'HTML Lists allow developers to group a set of related items in lists.'),
                           ]),
                     )),
                 Container(
@@ -50,17 +50,24 @@ class HtmlListsPage extends StatelessWidget {
                         ))),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
-                    child: const Text('Ordered List -',
+                    child: const Text('List -',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ))),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
-                    child: const Text(
-                        'HTML Lists are of two types \n• Ordered List \n• Unordered List',
+                    child: const Text('To display an list we use <ol> element for ordered and <ul> element for undordered List. A list can have multiple childs. To define a child to a list we use <li> element inside <ol> or <ul> element',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 16
+                        ))),
+                
+                 Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text('Ordered List -',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ))),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
