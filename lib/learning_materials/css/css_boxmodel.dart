@@ -42,19 +42,28 @@ class CssBoxmodelPage extends StatelessWidget {
                           ]),
                     )),
                 Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_structure_codeview.png'),
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_box_model.png'),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'Some examples are <p>Paragraph</p>, <a>Link</a>\' In HTML, Elements have opening tag <example> and closing tag </example>. everything displayed on the web page is defined by these elements only.',
+                        'Content is in the center in red color.\n \nContent - It is visible things like image, text, video or anything.\n\nPadding - It is the transparent area which comes before border.\n\nBorder - It is visible border whose position is affected by padding.\n\nMargin - It is transparent distance between two elements.',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
-                
-                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text(
+                        'You will understand box model when you will be writing css yourself.',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ))),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
-                  child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)
+                  child: const Text(
+                    'Continue to the next section.',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                )
               ],
             ),
           ),
