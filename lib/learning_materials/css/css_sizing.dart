@@ -55,6 +55,12 @@ class CssSizingPage extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ))),
+                        SizedBox(height: 16,),
+                        Image.network(
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_box_model.png'),
+                    SizedBox(height: 16,),
+                    Image.network(
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_box_model.png'),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
                   child: const Text(

@@ -65,7 +65,9 @@ class CssColorsPage extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ))),
-                
+                         SizedBox(height: 16,),
+                Image.network(
+                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/css_colors.png'),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
                   child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)
