@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/learning_materials/content/course_overview.dart';
 import 'package:quolo/learning_materials/content/course_prerequisite.dart';
+import 'package:quolo/learning_materials/css/css_boxmodel.dart';
+import 'package:quolo/learning_materials/css/css_coloring.dart';
+import 'package:quolo/learning_materials/css/css_comments.dart';
 import 'package:quolo/learning_materials/css/css_introduction.dart';
 import 'package:quolo/learning_materials/css/css_selectors.dart';
 import 'package:quolo/learning_materials/css/css_syntax.dart';
@@ -221,15 +224,24 @@ class HomePage extends StatelessWidget {
                 children: [
                   ListTile(
                     title: const Text('Comments'),
-                    onTap: () {},
+                    onTap: () {Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssCommentsPage()));},
                   ),
                   ListTile(
                     title: const Text('Coloring'),
-                    onTap: () {},
+                    onTap: () {Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssColorsPage()));},
                   ),
                   ListTile(
                     title: const Text('Box Model'),
-                    onTap: () {},
+                    onTap: () {Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const CssBoxmodelPage()));},
                   ),
                   ListTile(
                     title: const Text('Sizing'),

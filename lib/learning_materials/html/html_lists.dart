@@ -69,6 +69,38 @@ class HtmlListsPage extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ))),
+                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_ordered_list.png')),
+
+                   Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_ordered_list_preview.png')),
+
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text('Unordered List -',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ))),
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text('We can just replace <ol> with <ul> to make an unordered list.',
+                        style: TextStyle(
+                          fontSize: 16
+                        ))),
+                 Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_unordered_list.png')),
+
+                   Container(
+                    padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                    child: Image.network(
+                        'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_unordered_list_preview.png')),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
                   child: const Text(
