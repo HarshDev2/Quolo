@@ -38,23 +38,37 @@ class HtmlListsPage extends StatelessWidget {
                           children: const <TextSpan>[
                             TextSpan(
                                 text:
-                                    'In HTML, to show something visually on a web page html elements are used.'),
+                                    'HTML Lists allow developers to groupa set of related items in lists.'),
                           ]),
                     )),
-                Image.network(
-                    'https://raw.githubusercontent.com/HarshDev2/Quolo/master/lib/assets/html_structure_codeview.png'),
                 Container(
                     padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
                     child: const Text(
-                        'Some examples are <p>Paragraph</p>, <a>Link</a>\' In HTML, Elements have opening tag <example> and closing tag </example>. everything displayed on the web page is defined by these elements only.',
+                        'HTML Lists are of two types \n• Ordered List \n• Unordered List',
                         style: TextStyle(
                           fontSize: 16,
                         ))),
-                
-                
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text('Ordered List -',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ))),
+                Container(
+                    padding: const EdgeInsets.fromLTRB(12, 24, 12, 0),
+                    child: const Text(
+                        'HTML Lists are of two types \n• Ordered List \n• Unordered List',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ))),
                 Container(
                   padding: const EdgeInsets.fromLTRB(12, 24, 12, 36),
-                  child: const Text('Continue to the next section.', style: TextStyle(fontSize: 16),),)
+                  child: const Text(
+                    'Continue to the next section.',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                )
               ],
             ),
           ),

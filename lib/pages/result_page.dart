@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quolo/nav_management.dart';
 import 'package:quolo/pages/quizz_page.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -13,12 +14,19 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(leading: IconButton(icon: const Icon(Icons.arrow_back_ios_rounded),onPressed: () => Navigator.pushNamed(context, '/')),
-      title: const Text('Result'),),
+      appBar: AppBar(
+        leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios_rounded),
+            splashRadius: 25.6,
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => NavManagement(),)),
+      ),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SizedBox(height: 60,),
+          const SizedBox(
+            height: 60,
+          ),
           const SizedBox(
             width: double.infinity,
             child: Text(
@@ -43,8 +51,8 @@ class _ResultScreenState extends State<ResultScreen> {
           ),
           Text(
             "${widget.score}",
-            style: const TextStyle(
-              color: Colors.orange,
+            style: TextStyle(
+              color: Colors.yellow.shade700,
               fontSize: 85.0,
               fontWeight: FontWeight.bold,
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quolo/utils/themes.dart';
-import '/data/questions_example.dart';
+import '../data/html_beginner_questions.dart';
 import 'result_page.dart';
 
 class QuizzScreen extends StatefulWidget {
@@ -32,7 +32,9 @@ class _QuizzScreenState extends State<QuizzScreen> {
       home: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back,),
+            splashRadius: 26,
+            
             onPressed: () {
               Navigator.pop(context);
             },
@@ -58,48 +60,33 @@ class _QuizzScreenState extends State<QuizzScreen> {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      width: double.infinity,
-                      child: Text(
-                        "Question ${index + 1}/10",
-                        textAlign: TextAlign.start,
-                        style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 24.0,
-                        ),
-                      ),
-                    ),
-                    const Divider(
-                      color: Colors.black,
+                    Container(
+                      child: Text("${questions[index].question}",
+                          style: const TextStyle(
+                            color: Colors.black,
+                            fontSize: 24.0,
+                          )),
                     ),
                     const SizedBox(
-                      height: 10.0,
-                    ),
-                    SizedBox(
-                      width: double.infinity,
-                      height: 80.0,
-                      child: Text(
-                        "${questions[index].question}",
-                        style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 18.0,
-                        ),
-                      ),
+                      height: 60,
                     ),
                     for (int i = 0; i < questions[index].answers!.length; i++)
                       Container(
                         width: double.infinity,
-                        height: 50.0,
+                        height: 52.0,
                         margin: const EdgeInsets.only(
                             bottom: 20.0, left: 12.0, right: 12.0),
+                            
                         child: RawMaterialButton(
+                          elevation: 0,
                           shape: RoundedRectangleBorder(
+                            
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           fillColor: btnPressed
                               ? questions[index].answers!.values.toList()[i]
-                                  ? Colors.green
-                                  : Colors.red
+                                  ? Color.fromARGB(255, 67, 194, 73)
+                                  : Color.fromARGB(255, 255, 75, 75)
                               : Colors.grey.shade300,
                           onPressed: !answered
                               ? () {
@@ -117,6 +104,7 @@ class _QuizzScreenState extends State<QuizzScreen> {
                               : null,
                           child:
                               Text(questions[index].answers!.keys.toList()[i],
+                              textAlign: TextAlign.center,
                                   style: const TextStyle(
                                     color: Colors.black,
                                     fontSize: 18.0,
@@ -148,8 +136,8 @@ class _QuizzScreenState extends State<QuizzScreen> {
                         child: Ink(
                           padding: const EdgeInsets.all(14.0),
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.blue.shade400),
+                              borderRadius: BorderRadius.circular(12),
+                              color: Colors.lightBlue.shade300),
                           width: 180,
                           child: Text(
                             btnText,

@@ -34,18 +34,22 @@ class ChallengesPages extends StatelessWidget {
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                     ),
                     const SizedBox(height: 16),
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                          color: Colors.blue.shade400,
-                          borderRadius: BorderRadius.circular(8)),
-                      width: 120,
-                      child: const Text('Start',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold)),
+                    
+                    InkWell(
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const QuizzScreen(),)),
+                      child: Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                            color: Colors.blue.shade400,
+                            borderRadius: BorderRadius.circular(8)),
+                        width: 120,
+                        child: const Text('Start',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold)),
+                      ),
                     )
                   ],
                 ),
